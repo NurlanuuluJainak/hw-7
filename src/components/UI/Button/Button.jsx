@@ -6,7 +6,7 @@ import styled from 'styled-components'
 }
 
 const Buttons = styled.button`
-    padding: 15px;
+    padding: 13px 25px;
     font-weight: 600;
     color: aliceblue;
     background-color: #4a026b;

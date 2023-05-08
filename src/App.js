@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import { Expenses } from './components/Expenses/Expenses';
 import { NewExpense } from './components/NewExpenses/NewExpenses';
-import { Header } from './components/Header/header';
 const producDate = [
   {
     title:"Alma",
@@ -32,7 +31,6 @@ const producDate = [
 
 
 function App() {
-
   const [newProduc,setNewProduc] = useState(producDate)
 
   const addNewExpensesHandler = (data) => {
@@ -47,10 +45,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
-     <NewExpense onSubmit={addNewExpensesHandler}/>
-     <Expenses data={newProduc} />
-    </div>
+   
+          <div>
+            <NewExpense onSubmit={addNewExpensesHandler} />
+            <Expenses data={newProduc} />
+          </div>
+  </div>
     
 
   );

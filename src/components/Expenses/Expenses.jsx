@@ -21,8 +21,8 @@ export const Expenses = ({data}) => {
     
     return(
         <ExpensesCardFilter>
-            <ExpensesFilter getValue={getSelectValue}/>
-            <ExpensesChart filteredExpenses={filteredYear}/>
+            <ExpensesFilter value={selectedYear} getValue={getSelectValue}/>
+            <ExpensesChart  filteredExpenses={filteredYear}/>
         {filteredYear.map((el) =>(
            <ExpenseCard el={el} key={el.id} />
         ))}

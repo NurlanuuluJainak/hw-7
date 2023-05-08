@@ -5,8 +5,7 @@ export const ExpensesFilter = (props) =>{
         <ExpensesFilterContent >
             <ExpensesFilterControl >
                 <ExpnesesFilterControlLable>Filter by year</ExpnesesFilterControlLable>
-                <Button >по убыванию</Button>
-                <Button>по возрастанию</Button>
+             
             </ExpensesFilterControl>
                 <div >
 

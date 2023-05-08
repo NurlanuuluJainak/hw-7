@@ -19,7 +19,6 @@ export const ExpenseCard = ({el}) => {
         <Price>
         <PriceText>$ {el.price}</PriceText>
         </Price>
-        <button>delete</button>
        </DivItem>
     )
 }
